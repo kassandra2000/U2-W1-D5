@@ -176,7 +176,7 @@ aside {
   display: flex;
   align-items: start;
   flex-wrap: wrap;
-  height: 70vh;
+  height: 100vh;
   position: sticky;
   top: 100px;
   padding: 0 20px;
@@ -186,10 +186,11 @@ aside a {
   text-decoration: none;
   border: 1px solid #f2f2f2;
   background-color: #f2f2f2;
-  line-height: 20px;
+
   cursor: pointer;
   padding: 15px;
   border-radius: 30px;
+  font-size: 0.8em;
 }
 aside .green {
   all: unset;
@@ -434,22 +435,22 @@ aside p {
   }
 }
 @media screen and (max-width: 595px) {
-   #divVuoto{
+  #divVuoto {
     width: 1px;
     height: 1px;
   }
-  div.divSect2{
+  div.divSect2 {
     letter-spacing: 0.4em;
     line-height: 3em;
     font-size: 0.4em;
   }
-  div.flex{
+  div.flex {
     margin-bottom: 270px;
   }
-  div.flex span{
+  div.flex span {
     width: 90%;
   }
-  .sect2 .flex blockquote{
+  .sect2 .flex blockquote {
     width: 150%;
     padding-top: 20px;
   }

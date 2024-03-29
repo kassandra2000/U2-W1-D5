@@ -22,9 +22,8 @@ nav {
   transition: background-color 300ms linear;
 }
 
-button.first{
+button.first {
   transition: all 300ms linear;
-
 }
 ul,
 .left-text {
@@ -54,18 +53,20 @@ header button {
 .title-box {
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: center;
   border-bottom: 1px solid black;
+  padding-top: 100px;
 }
 .title-box div:nth-of-type(1) {
-  padding: 200px 0 60px 60px;
+  padding: 0px 0 60px 60px;
 }
 
 .title-box h1 {
   line-height: 74px;
   font-family: "Spectral", serif;
-  font-size: 7em;
-  line-height: 90px;
+  font-size: 8.6vw;
+  line-height: 7vw;
+  text-wrap: nowrap;
   letter-spacing: -0.05em;
   font-feature-settings: "pnum" on, "lnum" on;
 }
@@ -213,8 +214,8 @@ aside h3 {
   justify-content: space-around;
   gap: 15px;
 }
-.asidediv1 .divA{
-    flex-grow: 1;
+.asidediv1 .divA {
+  flex-grow: 1;
 }
 .asidediv2 {
   display: flex;
@@ -227,26 +228,67 @@ aside p {
   color: rgb(150, 150, 150);
   cursor: pointer;
 }
-
-@media screen and (max-width: 970px) {
-    .sect2{flex-direction: column;
-        
-    }
-    aside{
-       order: -1;
-       position: unset;
-       width: 90%
-    }
-    div .flex{
-        justify-content: space-around;
-    }
-    .divA{
-        width: 400px;
-    }
-    .divWhitNoImage {
-        width: 220px;
-    }
+@media screen and (max-width: 1159px) {
+  div.divA {
+    width: 300px;
+    margin-bottom: 40px;
+  }
+  div.asidediv1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 15px;
+  }
 }
+@media screen and (max-width: 970px) {
+  div.divA {
+    width: 600px;
+  }
+  .sect2 {
+    flex-direction: column;
+  }
+  .asidediv2 {
+    display: none;
+  }
+  aside {
+    order: -1;
+    position: unset;
+    width: 90%;
+    height: unset;
+  }
+  div .flex {
+    justify-content: space-around;
+  }
+  .divA {
+    width: 400px;
+  }
+  .divWhitNoImage {
+    width: 220px;
+  }
+  main {
+    margin-left: 10px;
+  }
+  main .h4 h4 {
+    margin-left: 20px;
+  }
+  section.sect1 {
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 750px) {
+  .none {
+    display: none;
+  }
+  div.div-container-sect1 {
+    max-width: none;
+    padding-left: 30px;
+  }
+  .sect1 .div-container-sect1 div:nth-of-type(2) {
+    width: unset;
+    width: 80vw;
+  }
+}
+
 .flex {
   display: flex;
   justify-content: space-between;
@@ -308,4 +350,107 @@ aside p {
 .flex div span {
   font-size: 0.8em;
   color: grey;
+}
+.divA {
+  margin: 30px 0;
+}
+
+/* g{opacity: 0;} */
+@media screen and (max-width: 640px) {
+  .none2 {
+    display: none;
+  }
+  div.asidediv1 {
+    width: 90%;
+  }
+  .sect2 div.flex div {
+    width: 70vw;
+  }
+  img.img {
+    width: 20vw;
+    height: 90px;
+    padding-left: 10px;
+  }
+}
+@media screen and (max-width: 595px) {
+  #imgreduce {
+    width: 30%;
+  }
+
+  .sect2 div.flex div {
+    width: 50vw;
+  }
+  div.asidediv1 {
+    width: 90%;
+    justify-content: center;
+  }
+  .sect2 .divSect2 .flex div {
+    width: 60vw;
+    height: 100px;
+    padding-left: 5px;
+    font-size: 1.9em;
+  }
+  .flex div:nth-of-type(2) {
+    width: 39px;
+  }
+  .sect2 div .flex {
+    justify-content: start;
+  }
+  .sect2 .divSect2 .flex .img {
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+  }
+  aside div {
+    width: 300px;
+  }
+  img.img {
+    object-fit: cover;
+  }
+  .divSect2 .flex blockquote {
+    justify-content: left;
+    width: 70%;
+  }
+  main {
+    margin: 0;
+  }
+  div.div-container-sect1 {
+    padding: 0;
+    gap: 0;
+    font-size: 0.7em;
+  }
+  div.divSect2 {
+    padding: 0;
+    gap: 0;
+    font-size: 0.3em;
+  }
+  img.img {
+    width: 40px;
+    height: 40px;
+  }
+  .flex span a {
+    padding: 0 20px;
+    line-height: 1;
+  }
+}
+@media screen and (max-width: 595px) {
+   #divVuoto{
+    width: 1px;
+    height: 1px;
+  }
+  div.divSect2{
+    letter-spacing: 0.4em;
+    line-height: 3em;
+    font-size: 0.4em;
+  }
+  div.flex{
+    margin-bottom: 270px;
+  }
+  div.flex span{
+    width: 90%;
+  }
+  .sect2 .flex blockquote{
+    width: 150%;
+    padding-top: 20px;
+  }
 }

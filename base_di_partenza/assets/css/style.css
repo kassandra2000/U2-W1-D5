@@ -178,6 +178,7 @@ aside {
   height: 70vh;
   position: sticky;
   top: 100px;
+  padding: 0 20px;
 }
 aside a {
   color: black;
@@ -189,7 +190,7 @@ aside a {
   padding: 15px;
   border-radius: 30px;
 }
-aside a:last-of-type {
+aside .green {
   all: unset;
   color: rgb(71, 148, 91);
   text-decoration: none;
@@ -212,18 +213,40 @@ aside h3 {
   justify-content: space-around;
   gap: 15px;
 }
+.asidediv1 .divA{
+    flex-grow: 1;
+}
 .asidediv2 {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: start;
   gap: 15px;
 }
 aside p {
-  font-size: 1.3em;
+  font-size: 1.2em;
   color: rgb(150, 150, 150);
   cursor: pointer;
 }
 
+@media screen and (max-width: 970px) {
+    .sect2{flex-direction: column;
+        
+    }
+    aside{
+       order: -1;
+       position: unset;
+       width: 90%
+    }
+    div .flex{
+        justify-content: space-around;
+    }
+    .divA{
+        width: 400px;
+    }
+    .divWhitNoImage {
+        width: 220px;
+    }
+}
 .flex {
   display: flex;
   justify-content: space-between;
